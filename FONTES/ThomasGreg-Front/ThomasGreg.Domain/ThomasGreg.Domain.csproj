@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\Cliente.cs~RF310bd054.TMP" />
+    <None Remove="Entities\Logradouro.cs~RF2f6727ca.TMP" />
+    <None Remove="Interfaces\Repository\ILogradouroRepository.cs~RF30d8f365.TMP" />
+  </ItemGroup>
+
+</Project>

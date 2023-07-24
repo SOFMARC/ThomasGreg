@@ -1,0 +1,12 @@
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\bin\Debug\net6.0\ThomasGreg.Domain.deps.json
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\bin\Debug\net6.0\ThomasGreg.Domain.dll
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\bin\Debug\net6.0\ThomasGreg.Domain.pdb
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.csproj.AssemblyReference.cache
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.AssemblyInfoInputs.cache
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.AssemblyInfo.cs
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.csproj.CoreCompileInputs.cache
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.dll
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\refint\ThomasGreg.Domain.dll
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ThomasGreg.Domain.pdb
+D:\Users\thiag\Documents\LOJA\Sistemas\thoasgreg\ThomasGreg-Front\ThomasGreg.Domain\obj\Debug\net6.0\ref\ThomasGreg.Domain.dll

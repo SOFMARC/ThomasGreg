@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mcroservicos", "Mcroservicos", "{09FDF50A-B470-4587-8702-B208E287F5D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClienteService", "ClienteService", "{DD8C91C0-4749-414F-ADAF-DC1EC1C97BF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{186A7FB6-CCA6-4EE1-8D98-0D736FF5011D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "Auth\Auth.csproj", "{64355278-AD44-40B1-A8FB-DF3DA5545997}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteService", "ClienteService\ClienteService.csproj", "{B96F33DF-72F6-40DC-857B-6B4A8035BC38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64355278-AD44-40B1-A8FB-DF3DA5545997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64355278-AD44-40B1-A8FB-DF3DA5545997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64355278-AD44-40B1-A8FB-DF3DA5545997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64355278-AD44-40B1-A8FB-DF3DA5545997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96F33DF-72F6-40DC-857B-6B4A8035BC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96F33DF-72F6-40DC-857B-6B4A8035BC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96F33DF-72F6-40DC-857B-6B4A8035BC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96F33DF-72F6-40DC-857B-6B4A8035BC38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD8C91C0-4749-414F-ADAF-DC1EC1C97BF7} = {09FDF50A-B470-4587-8702-B208E287F5D0}
+		{186A7FB6-CCA6-4EE1-8D98-0D736FF5011D} = {09FDF50A-B470-4587-8702-B208E287F5D0}
+		{64355278-AD44-40B1-A8FB-DF3DA5545997} = {186A7FB6-CCA6-4EE1-8D98-0D736FF5011D}
+		{B96F33DF-72F6-40DC-857B-6B4A8035BC38} = {DD8C91C0-4749-414F-ADAF-DC1EC1C97BF7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {380DAABC-4511-4B94-A3B2-E597E2B14C66}
+	EndGlobalSection
+EndGlobal

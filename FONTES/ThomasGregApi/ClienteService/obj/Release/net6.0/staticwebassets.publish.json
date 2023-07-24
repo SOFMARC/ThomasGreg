@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1NvM54VaX47yWoRhiU0876SNsZgYXcUUvY4CDx7TXUA=",
+  "Source": "ClienteService",
+  "BasePath": "_content/ClienteService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

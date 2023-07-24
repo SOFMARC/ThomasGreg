@@ -1,0 +1,89 @@
+﻿@model ThomasGreg.Domain.Entities.Cliente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Logotipo" class="control-label"></label>
+                <input asp-for="Logotipo" class="form-control" />
+                <span asp-validation-for="Logotipo" class="text-danger"></span>
+            </div>
+
+            <h4>Logradouros</h4>
+            <div id="logradourosContainer">
+                @for (int i = 0; i < Model.Logradouros.Count; i++)
+                {
+                    <div id="Logradouros[@i]" class="form-group">
+                        <label class="control-label">Logradouro @(i + 1)</label>
+                        <input name="Logradouros[@i].Id" type="hidden" value="@Model.Logradouros.ElementAt(i).Id" />
+                        <input name="Logradouros[@i].Nome" class="form-control" value="@Model.Logradouros.ElementAt(i).Nome" />
+                        <span class="text-danger field-validation-valid" data-valmsg-for="Logradouros[@i].Nome" data-valmsg-replace="true"></span>
+                        <button type="button" class="btn btn-danger btnDeleteLogradouro">Deletar</button>
+                    </div>
+                }
+            </div>         
+
+            <h4>Logradouros a mais</h4>
+            <div id="logradourosContainer">
+                @* Inicialmente, nenhum campo de Logradouro é renderizado aqui. *@
+            </div>
+            <button type="button" id="btnAddLogradouro" class="btn btn-secondary">Adicionar Logradouro</button>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+       
+        var logradourosCounter = @Model.Logradouros.Count; 
+        $("#btnAddLogradouro").click(function () {
+            var newLogradouro = `<div id="Logradouros[${logradourosCounter}]" class="form-group">
+                                                <label class="control-label">Logradouro ${logradourosCounter + 1}</label>
+                                                <input name="Logradouros[${logradourosCounter}].Id" type="hidden" value="0" />
+                                                <input name="Logradouros[${logradourosCounter}].Nome" class="form-control" />
+                                                <span class="text-danger field-validation-valid" data-valmsg-for="Logradouros[${logradourosCounter}].Nome" data-valmsg-replace="true"></span>
+                                                <button type="button" class="btn btn-danger btnDeleteLogradouro">Deletar</button>
+                                              </div>`;
+            $("#logradourosContainer").append(newLogradouro);
+            logradourosCounter++;
+        });
+
+       
+        $(document).on('click', '.btnDeleteLogradouro', function () {
+            $(this).parent().remove(); 
+        });
+    </script>
+
+
+}
