@@ -1,23 +1,20 @@
 # ThomasGreg
 Project API rest (Microserviços) With Front-and MVC
 
-Este projeto é composto por uma aplicação web frontend construída utilizando o padrão Model-View-Controller (MVC) e uma API web backend estruturada em uma arquitetura de microserviços.
+Este projeto é composto por uma aplicação web frontend construída utilizando o padrão Model-View-Controller (MVC) com uma Arquitetura Onion e uma API web backend estruturada em uma arquitetura de microserviços.
 A solução é dividida em duas partes principais:
 
 Frontend MVC: A interface do usuário é construída em uma arquitetura de camadas para promover a modularidade e a facilidade de manutenção. Esta arquitetura também foi escolhida para facilitar uma possível migração para a nuvem no futuro.
-API Web Backend: O backend está estruturado como microserviços, onde cada serviço tem um propósito específico e opera de forma independente. A arquitetura de microserviços permite que cada serviço seja escalado independentemente conforme necessário.
-
-Os microserviços consistem em:
-
-Serviço de Autenticação: Este microserviço é responsável pela autenticação de usuários. Ele opera em seu próprio banco de dados dedicado para garantir um desempenho otimizado e manter a segurança dos dados do usuário.
-Serviço de Cadastro de Clientes: Este microserviço gerencia todas as operações relacionadas aos clientes, incluindo criação, leitura, atualização e exclusão de registros de clientes (operações CRUD). Ele também opera em seu próprio banco de dados dedicado.
-O projeto utiliza AutoMapper para simplificar o mapeamento de objetos, e implementa tratamento de erros e regras de negócios para garantir que a aplicação opere de forma robusta e confiável.
+API Web Backend: O backend está estruturado como microserviços, onde cada serviço tem um propósito específico e opera de forma independente. A arquitetura de microserviços permite que cada serviço seja escalado independentemente conforme necessário. 
+API Web Autenticação: Pensado no futuro e no crescimento da empresa foi decidido o microserviços, a autenticação feita nessa arquitetura faz com que possa ser usado em varios outros proejtos. Temos varios beneficios Escalabilidade, Segurança, Desacoplamento, Melhoria de desempenho "Ponto importante".
+Pensando em melhor desempenho optamos por criar base de dados separadas, então temos uma base para cadastro de clientes e uma para authenticação.
 
 ########## ATUALIZAÇÕES E CORREÇÕES ############
 O projeto precisa ser feito mais testes para correção de bugs e prevenir algumas falhas.
 Inclusão de log de erros.
 Testes Unitários e de Integração:
 Encapsulamento de serviços de dominio dividindo assim a logica de negocio.
+Implementação e modificação do front-end. Deixar mais amigavel, implementar validações, tela de login.
 
 ## Instalação
 
